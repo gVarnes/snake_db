@@ -8,7 +8,9 @@
     "start": "nodemon --exec npx babel-node index.js",
     "db:migrate": "npx sequelize db:migrate",
     "db:undo": "npx sequelize db:migrate:undo:all",
-    "migration": "npx sequelize migration:create"
+    "migration": "npx sequelize migration:create",
+    "dev": "babel src -d dist",
+    "open": "npm run dev && node dist/index.js"
   },
   "keywords": [],
   "author": "",
